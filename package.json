@@ -1,0 +1,12 @@
+{
+  "name": "careconnect-workspace",
+  "private": true,
+  "scripts": {
+    "install:frontend": "npm --prefix frontend install",
+    "dev": "npm --prefix frontend run dev",
+    "start": "npm --prefix frontend start",
+    "build": "npm --prefix frontend run build",
+    "db:up": "docker compose up -d --wait oracle",
+    "db:stop": "docker compose stop oracle"
+  }
+}

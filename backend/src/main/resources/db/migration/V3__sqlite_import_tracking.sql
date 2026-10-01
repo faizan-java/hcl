@@ -1,0 +1,5 @@
+CREATE TABLE sqlite_import_runs (
+  source_sha256 VARCHAR2(64) PRIMARY KEY,
+  source_path VARCHAR2(1000) NOT NULL,
+  imported_at TIMESTAMP WITH TIME ZONE DEFAULT SYSTIMESTAMP NOT NULL
+);
